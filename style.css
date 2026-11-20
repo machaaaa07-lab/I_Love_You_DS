@@ -634,7 +634,7 @@ h2 {
     }
 
     .page {
-        min-height: calc(100vh - 140px);
+        min-height: 100vh;
         padding: 25px 15px;
     }
 
