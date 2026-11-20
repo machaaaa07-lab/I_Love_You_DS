@@ -61,7 +61,7 @@ body {
 
 .page {
     display: none;
-    min-height: calc(100vh - 160px);
+    min-height:100vh;
     padding: 40px 20px;
     position: relative;
     overflow: hidden;
