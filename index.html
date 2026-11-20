@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Impress Her With This ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <h1>Impress Her With This</h1>
+    <p>Best SURPRISE for GF</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navigation">
+    <span>❤️ A little surprise made with love ❤️</span>
+</nav>
+
+<!-- MAIN WEBSITE -->
+<main id="website">
+
+    <!-- PAGE 1 : ROSE INTRO -->
+    <section class="page active" id="page1">
+
+        <div class="rose-container" id="roseContainer"></div>
+
+        <div class="intro-text">
+            <h2>Something special is waiting...</h2>
+            <p>Made with love, just for you ❤️</p>
+            <button onclick="goToPage(2)">Start Surprise 💌</button>
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 : FROM ME TO YOU -->
+    <section class="page" id="page2">
+
+        <div class="center-content">
+
+            <p class="script-text">From me to you</p>
+
+            <p class="sub-text">
+                A little journey filled with memories,
+                feelings and love.
+            </p>
+
+            <button onclick="goToPage(3)">Continue ❤️</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 3 : PHOTO -->
+    <section class="page" id="page3">
+
+        <div class="photo-card">
+
+            <p class="small-heading">A beautiful memory</p>
+
+            <div class="photo-frame">
+                <img src="images/photo1.jpg" alt="Our beautiful memory">
+            </div>
+
+            <h2>My favourite person ❤️</h2>
+
+            <div class="heart-row">♡ ♥ ♡ ♥ ♡</div>
+
+            <button onclick="goToPage(4)">Next Surprise 💗</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 4 : I LOVE YOU -->
+    <section class="page love-page" id="page4">
+
+        <div class="love-content">
+
+            <p class="script-text">I Love You</p>
+
+            <div class="big-heart">❤️</div>
+
+            <p class="love-caption">
+                More than words can ever explain.
+            </p>
+
+            <button onclick="goToPage(5)">Continue 💌</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 : LETTER -->
+    <section class="page" id="page5">
+
+        <div class="letter-card">
+
+            <div class="letter-top">
+                <span>💌</span>
+                <h2>My Love Letter</h2>
+            </div>
+
+            <div class="letter-content">
+
+                <p>My Dear Love, ❤️</p>
+
+                <p>
+                    From the moment you came into my life,
+                    everything started feeling more beautiful.
+                    Your smile makes my day, your voice gives me peace,
+                    and your presence means more than you know.
+                </p>
+
+                <p>
+                    Every memory with you is something I want to keep
+                    forever. Even the smallest moments become special
+                    when I spend them with you.
+                </p>
+
+                <p>
+                    I may not always find the perfect words to express
+                    how much I love you, but I hope you always feel it.
+                </p>
+
+                <p>
+                    Thank you for being you. Thank you for being
+                    a beautiful part of my life.
+                </p>
+
+                <p class="signature">
+                    Forever yours,<br>
+                    <span>❤️ Your Love</span>
+                </p>
+
+            </div>
+
+            <div class="reaction">
+                <span>❤️</span>
+                <span>🥰</span>
+                <span>😘</span>
+            </div>
+
+            <button onclick="goToPage(6)">Next Surprise 🌹</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 6 : PHOTO GALLERY -->
+    <section class="page" id="page6">
+
+        <div class="gallery-container">
+
+            <h2>Our Beautiful Memories 📸</h2>
+
+            <p>Every picture tells a story.</p>
+
+            <div class="gallery">
+
+                <img src="images/photo1.jpg" alt="Memory 1">
+                <img src="images/photo2.jpg" alt="Memory 2">
+                <img src="images/photo3.jpg" alt="Memory 3">
+                <img src="images/photo4.jpg" alt="Memory 4">
+                <img src="images/photo5.jpg" alt="Memory 5">
+                <img src="images/photo6.jpg" alt="Memory 6">
+
+            </div>
+
+            <p class="gallery-caption">
+                Every moment with you is my favourite. ❤️
+            </p>
+
+            <button onclick="goToPage(7)">Continue 💕</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 7 : INTERACTIVE QUESTION -->
+    <section class="page" id="page7">
+
+        <div class="question-card">
+
+            <div class="question-icon">💗</div>
+
+            <h2>One Little Question...</h2>
+
+            <p class="question">
+                Will you stay with me and make more beautiful memories together?
+            </p>
+
+            <div class="answer-buttons">
+
+                <button onclick="showAnswer('yes')">
+                    Yes, Always ❤️
+                </button>
+
+                <button onclick="showAnswer('love')">
+                    Of Course! 🥰
+                </button>
+
+            </div>
+
+            <div id="answerMessage"></div>
+
+            <button class="continue-button hidden" id="questionContinue"
+                    onclick="goToPage(8)">
+                Continue 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 8 : VOICE NOTE -->
+    <section class="page" id="page8">
+
+        <div class="voice-card">
+
+            <div class="voice-icon">🎙️</div>
+
+            <h2>A Message From My Heart</h2>
+
+            <p>
+                There are things I want to say in my own voice...
+            </p>
+
+            <audio id="voiceAudio" controls>
+                <source src="audio/voice.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <p class="voice-caption">
+                Listen whenever you miss me ❤️
+            </p>
+
+            <button onclick="goToPage(9)">Next Surprise 🌳</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 9 : LOVE TREE -->
+    <section class="page" id="page9">
+
+        <div class="tree-container">
+
+            <div class="tree">
+                <div class="tree-top">
+                    ❤️ 💗 ❤️ 💕 💗
+                    <br>
+                    💕 ❤️ 💗 ❤️
+                    <br>
+                    ❤️ 💗 ❤️ 💕
+                </div>
+
+                <div class="tree-trunk"></div>
+            </div>
+
+            <div class="tree-message">
+                <h2>I Love You ❤️</h2>
+
+                <p>
+                    My love for you grows every single day.
+                </p>
+            </div>
+
+            <button onclick="goToPage(10)">Open Your Letter 💌</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 10 : ENVELOPE -->
+    <section class="page" id="page10">
+
+        <div class="envelope-container">
+
+            <h2>A Letter Just For You 💌</h2>
+
+            <div class="envelope" onclick="openEnvelope()">
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-body">
+                    <div class="envelope-heart">❤️</div>
+                </div>
+
+                <div class="envelope-letter">
+                    <p>For You</p>
+                    <span>❤️</span>
+                </div>
+
+            </div>
+
+            <p class="envelope-instruction">
+                Tap the envelope to open it
+            </p>
+
+            <button onclick="goToPage(11)">Final Surprise ✨</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 11 : FINAL DOOR -->
+    <section class="page" id="page11">
+
+        <div class="final-container">
+
+            <h2>One Last Surprise...</h2>
+
+            <div class="door-scene">
+
+                <div class="door" id="door" onclick="openDoor()">
+
+                    <div class="door-knob"></div>
+
+                    <div class="door-text">
+                        Open Me ❤️
+                    </div>
+
+                </div>
+
+                <div class="light-effect"></div>
+
+            </div>
+
+            <p id="finalMessage">
+                There is something special behind this door...
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FLOATING HEARTS -->
+<div id="floatingHearts"></div>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
