@@ -405,28 +405,54 @@ h2 {
 
 .tree-canopy {
     position: absolute;
-    top: 20px;
-    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
     height: 250px;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0 0 15px #ff9ac8);
+
+    filter: drop-shadow(0 0 12px #ff9ac8);
 }
 
+/* Heart tree shape */
 .tree-canopy span {
-    font-size: 40px;
-    margin: 3px;
-    animation: heartGlow 2s infinite alternate;
+    display: inline-block;
+    font-size: 35px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    animation: heartGlow 1.5s infinite alternate;
 }
 
-.tree-canopy span:nth-child(even) {
-    animation-delay: 0.5s;
+/* Top row */
+.tree-canopy span:nth-child(1) {
+    margin-left: 65px;
 }
 
-.tree-canopy span:nth-child(3n) {
-    animation-delay: 1s;
+.tree-canopy span:nth-child(2) {
+    margin-right: 65px;
+}
+
+/* Middle */
+.tree-canopy span:nth-child(3),
+.tree-canopy span:nth-child(4),
+.tree-canopy span:nth-child(5),
+.tree-canopy span:nth-child(6),
+.tree-canopy span:nth-child(7) {
+    margin: 0;
+}
+
+/* Bottom */
+.tree-canopy span:nth-child(12),
+.tree-canopy span:nth-child(13),
+.tree-canopy span:nth-child(14),
+.tree-canopy span:nth-child(15) {
+    margin-top: -15px;
 }
 
 .tree-trunk {
